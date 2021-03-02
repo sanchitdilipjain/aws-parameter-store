@@ -35,8 +35,8 @@ Parameter Store provides benefits such as
     - AWS CloudTrail
 
 **Tutorial**
-In this section we will create a Secure String parameter and retrieve it using the Console and CLI.
 
+In this section we will create a Secure String parameter and retrieve it using the Console and CLI.
 1. Navigate to Systems Manager > Application Management > Parameter Store
 2. Fill out the data for adding your secret
 3. Name: YOURNAME-secret1
