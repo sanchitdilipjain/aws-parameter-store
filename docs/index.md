@@ -82,4 +82,24 @@ In this section we will create a Secure String parameter and retrieve it using t
 
 **Tutorial via AWS CLI**
 
-In this section we will create a Secure String parameter and retrieve it using the CLI.
+In this section we will create a Secure String parameter and retrieve it using the CLI
+
+1. Install AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+
+2. After installation run aws configure and set the Access & Secret keys. Set region to us-east-1
+
+    <img src="images/image10.png" class="inline"/>
+    
+    **Note:** for a live setup, it is recommended to use IAM role for working with AWS Parameter Store
+
+3. Let's retrieve the secret we created at the previous section
+    
+       Command: aws ssm get-parameter --name “YOURNAME-secret1”
+
+   <img src="images/image11.png" class="inline"/>
+
+4. We can also retrieve the value as plain text by providing --with-decryption
+
+       Command: aws ssm get-parameter --name “YOURNAME-secret1” --with-decryption
+
+   <img src="images/image12.png" class="inline"/>
