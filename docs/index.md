@@ -34,22 +34,52 @@ Parameter Store provides benefits such as
     - Amazon EventBridge
     - AWS CloudTrail
 
-**Tutorial**
+**Tutorial via AWS Console**
 
-In this section we will create a Secure String parameter and retrieve it using the Console and CLI.
-1. Navigate to Systems Manager > Application Management > Parameter Store
-2. Fill out the data for adding your secret
-3. Name: YOURNAME-secret1
-4. Description: blank
-5. Tier: Standard
-6. Type: SecureString
-7. KMS Key Source: My current account (uses the default KMS key or specify a CMK of your choice)
-8. KMS Key ID: alias/aws/ssm (AWS managed key for Systems Manager)
-9. Value: This is your secret data whether that is configuration data, passwords, connection strings, etc…
-10. Tags: your choice – this is ideal to organize your secrets so you do not get lost –
-  - Key: Team / Value: Operations
-  - Key: Application / Value: RevenueGen1
-  - Key: Owner / Value: YOURNAME
-11. Select Create Parameter
-12. You are brought back to the Parameter Store home screen and now select your new secret
-13. You can Select Show to reveal the contents of the secret
+In this section we will create a Secure String parameter and retrieve it using the Console
+1. Navigate to Systems Manager > Application Management > Parameter Store  
+   
+   <img src="images/image1.png" class="inline"/>
+
+2. Select Parameter Store under Application Management section in the left pane
+    
+   <img src="images/image2.png" class="inline"/>
+
+3. Click on Create Parameter
+
+   <img src="images/image3.png" class="inline"/>
+
+4. Provide Parameter details like
+    - Name
+    - Description
+    - Tier
+    - Type
+    - KMS Key Source & ID
+    - Parameter Value
+    - Tags
+     
+    <img src="images/image4.png" class="inline"/>
+    
+    <img src="images/image5.png" class="inline"/>
+    
+    <img src="images/image6.png" class="inline"/>
+
+5. After filling the required details, Select Create Parameter 
+ 
+6. Now you are on the home screen with list of all Parameter configured in your account, now select your new secret
+    
+    <img src="images/image7.png" class="inline"/>
+    
+7. Select Show to reveal the contents of the secret  
+
+    <img src="images/image8.png" class="inline"/>
+
+8. History Tab will provide the details around who created, updated, or deleted the secret
+
+    <img src="images/image9.png" class="inline"/>
+    
+    **Note:** Versioning is preserve until you delete the parameter, if you delete the parameter then the history is deleted as well
+
+**Tutorial via AWS CLI**
+
+In this section we will create a Secure String parameter and retrieve it using the CLI.
