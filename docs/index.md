@@ -36,7 +36,7 @@ Parameter Store provides benefits such as
 
 **Tutorial via AWS Console**
 
-In this section we will create a Secure String parameter and retrieve it using the Console
+In this section, we will create a Secure String parameter and retrieve it using the Console
 1. Navigate to Systems Manager > Application Management > Parameter Store  
    
    <img src="images/image1.png" class="inline"/>
@@ -64,9 +64,9 @@ In this section we will create a Secure String parameter and retrieve it using t
     
     <img src="images/image6.png" class="inline"/>
 
-5. After filling the required details, Select Create Parameter 
+5. After filling in the required details, Select Create Parameter 
  
-6. Now you are on the home screen with list of all Parameter configured in your account, now select your new secret
+6. Now you are on the home screen with the list of all Parameter configured in your account, now select your new secret
     
     <img src="images/image7.png" class="inline"/>
     
@@ -78,11 +78,11 @@ In this section we will create a Secure String parameter and retrieve it using t
 
     <img src="images/image9.png" class="inline"/>
     
-    **Note:** Versioning is preserve until you delete the parameter, if you delete the parameter then the history is deleted as well
+    **Note:** Versioning is preserved until you delete the parameter, if you delete the parameter then the history is deleted as well
 
 **Tutorial via AWS CLI**
 
-In this section we will create a Secure String parameter and retrieve it using the CLI
+In this section, we will create a Secure String parameter and retrieve it using the CLI
 
 1. Install AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 
@@ -90,9 +90,9 @@ In this section we will create a Secure String parameter and retrieve it using t
 
     <img src="images/image10.png" class="inline"/>
     
-    **Note:** for a live setup, it is recommended to use IAM role for working with AWS Parameter Store
+    **Note:** for a live setup, it is recommended to use the IAM role for working with AWS Parameter Store
 
-3. Let's retrieve the secret we created at the previous section
+3. Let's retrieve the secret we created in the previous section
     
        Command: aws ssm get-parameter --name “YOURNAME-secret1”
 
