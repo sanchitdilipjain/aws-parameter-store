@@ -37,7 +37,7 @@ Parameter Store provides benefits such as
 **Tutorial via AWS Console**
 
 In this section, we will create a Secure String parameter and retrieve it using the Console
-1. Navigate to Systems Manager > Application Management > Parameter Store  
+1. Navigate to Systems Manager  
    
    <img src="images/image1.png" class="inline"/>
 
